@@ -1,1 +1,555 @@
 /* Your SCSS here. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section {
+    width: 100%;
+    min-height: 80vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+    z-index: 0;
+}
+
+section.fade-in {
+    animation: fadeIn 2s forwards; /* Triggers the fade-in animation */
+}
+
+/* Full-width sections */
+.full-width {
+    width: 100%;
+    padding: 60px 20px;
+}
+
+/* Header and Footer styling */
+header{
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+
+    .social-media {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        a {
+            color: #fff;
+            font-size: 24px;
+            transition: color 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                color: #04AA6D;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+#navbar,
+#navbar.small {
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 0;
+    background-color: #1a1a1a;
+    z-index: 9999;
+}
+
+#navbar.large {
+    position: sticky;
+    padding: 20px 0;
+}
+
+#navbar.small {
+    position: sticky;
+    padding: 10px 0;
+}
+
+#navbar.small a {
+    font-size: 14px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-size: 25px;
+    transition: font-size 0.3s ease;
+}
+
+#navbar a:hover {
+    background-color: #575757;
+    border-radius: 50px;
+}
+
+#navbar a.active {
+    background-color: #04AA6D;
+    border-radius: 50px;
+}
+
+#carousel-section {
+    padding: 0;
+    margin: 0;
+}
+
+/* Carousel Container */
+.carousel {
+    position: relative;
+    width: 60%;
+    // height: 100vh; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    min-height: 100%;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    user-select: none;
+    // transform: translateY(-50%);
+    // z-index: 1;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.multi-column {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+.full-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* For screens less than 1280px */
+@media (max-width: 1280px) {
+    /* Adjust font sizes, padding, etc. */
+    #navbar a {
+        font-size: 16px;
+    }
+}
+
+/* For screens less than 1024px */
+@media (max-width: 1024px) {
+    .multi-column {
+        column-count: 2;
+    }
+}
+
+/* For screens less than 768px */
+@media (max-width: 768px) {
+    .multi-column {
+        column-count: 1;
+    }
+    #navbar ul {
+        flex-direction: column;
+    }
+}
+
+// /* Modal Styles */
+// .modal {
+//     display: none; /* Hidden by default */
+//     position: fixed;
+//     z-index: 1001;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     overflow: auto;
+//     background-color: rgba(0,0,0,0.5);
+// }
+
+// .modal-content {
+//     background-color: #fefefe;
+//     margin: 15% auto;
+//     padding: 20px;
+//     width: 80%;
+// }
+
+// .close {
+//     color: #aaa;
+//     float: right;
+//     font-size: 28px;
+//     font-weight: bold;
+// }
+
+// .close:hover, .close:focus {
+//     color: black;
+//     cursor: pointer;
+// }
+
+// @keyframes fadeIn {
+//     from { opacity: 0; }
+//     to { opacity: 1; }
+// }
+
+
+/* Modern Video Container Styles */
+/* Ensure the parent container spans the full width */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ensure the items are centered */
+    gap: 30px;
+    padding: 20px;
+    width: 100%; /* Allow the container to expand full width */
+    max-width: 100%; /* Prevent any unintentional restriction on width */
+}
+
+.video-column {
+    flex: 1 1 calc(50% - 30px); /* Each video takes up 50% of the width */
+    max-width: 600px; /* Increase max-width based on your needs */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Ensure it can take up the full width of the parent */
+}
+
+/* Hover effect for video cards */
+.video-column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.video-column iframe {
+    width: 100%; /* Make sure iframe takes up full width */
+    height: 350px; /* Increase height for proportional videos */
+    border-radius: 10px 10px 0 0;
+}
+
+.video-caption {
+    text-align: center;
+    margin: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .video-column {
+        flex: 1 1 calc(50% - 30px); /* 2 videos per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .video-column {
+        flex: 1 1 100%; /* 1 video per row on small screens */
+    }
+    
+    .video-column iframe {
+        height: 300px;
+    }
+}
+
+.divider {
+    width: 100%;
+    height: 10px;
+    background: #04AA6D;
+    margin: 40px 0;
+}
+
+/* Common styles for all background sections */
+.background-section {
+    /* Background settings */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    /* Positioning and layout */
+    position: relative;
+    width: 100%;
+    padding: 100px 20px; /* Adjust padding for spacing */
+    color: #ffffff;
+    text-align: center;
+}
+
+.background-section::before {
+    /* Optional overlay to enhance text readability */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1;
+}
+
+.background-section .section-heading {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Specific background images for each section */
+.background-section1 {
+    background-image: url('assets/8.jpg');
+}
+
+.background-section2 {
+    background-image: url('assets/6.png');
+}
+
+.background-section3 {
+    background-image: url('assets/5.jpg');
+}
+
+.background-section4 {
+    background-image: url('assets/7.png');
+}
+
+/* Section 2: Elden Ring Introduction with Six Text Boxes */
+.elden-ring-introduction {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+
+    .section-heading {
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #ffffff;
+    }
+
+    .columns-container {
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap into two rows */
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .column {
+        flex: 1 1 30%; /* Each column takes up 30% of the width */
+        max-width: 30%;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .elden-ring-introduction .column {
+        flex: 1 1 45%; /* Adjust to two columns on tablets */
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .elden-ring-introduction .columns-container {
+        flex-direction: column; /* Stack vertically on mobile */
+        align-items: center;
+    }
+
+    .elden-ring-introduction .column {
+        flex: 1 1 100%; /* Full width on small screens */
+        max-width: 100%;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: left;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+.modal-content p {
+    line-height: 1.6;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
+
+/* Column Hover Effect */
+.column {
+    cursor: pointer;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top of other elements */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust as needed */
+    position: relative; /* For positioning the close button */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: green;
+    text-decoration: none;
+}
+
+.video-tag-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Adjust the space between the videos */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 50px; /* Padding around the section */
+}
+
+video {
+    width: 100%;
+    max-width: 610px; /* Increase max-width for larger videos */
+    height: auto;
+    border: 2px solid #ccc; /* Optional: Add border around video */
+}

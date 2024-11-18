@@ -1,13 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Elden Ring Intro</title>
+    <link rel="stylesheet" href="css/main.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to Elden Ring Intro Website</h1>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#section1">Game Images</a></li>
+            <li><a href="#section2">Introduction</a></li>
+            <li><a href="#section3">Official Videos</a></li>
+            <li><a href="#section4">Players' Cuts</a></li>
+        </ul>
+    </nav>
+
+    <section id="section1" class="full-width background-section background-section1">
+        <h2 class="section-heading">Game Images</h2>
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="assets/1.jpg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="assets/2.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="assets/3.jpg" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <img src="assets/4.jpg" alt="Slide 4">
+                </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+<section id="section2" class="full-width elden-ring-introduction background-section background-section2">
+    <h2 class="section-heading">Welcome to the World of Elden Ring</h2>
+    <div class="columns-container">
+        <div class="column" id="story">
+            <h3>The Story</h3>
+            <p>
+                Elden Ring takes place in the vast and mysterious Lands Between. The Elden Ring, the source of the Erdtree's power, has been shattered, leading to chaos. You, the Tarnished, are called to seek the shards of the Elden Ring and restore order.
+            </p>
+        </div>
+
+        <div class="modal" id="modal-story">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>The Story - More Information</h3>
+                <p>
+                    Elden Ring takes place in the vast and mysterious Lands Between. After the destruction of the Elden Ring, the balance of power between gods, demigods, and mortals is thrown into chaos. As the player, you take on the role of a Tarnished, summoned back to the Lands Between to restore the Elden Ring's power and claim the title of Elden Lord. The story is co-created by Hidetaka Miyazaki, known for his intricate storytelling, and George R. R. Martin, who provides rich lore, making the world one of the deepest in gaming history. The landscape is rife with myth, legends, and countless secrets waiting to be discovered.
+                </p>
+            </div>
+        </div>
+
+        <div class="column" id="gameplay">
+            <h3>Gameplay</h3>
+            <p>
+                Experience dynamic combat with a rich array of weapons, magic, and strategies. Elden Ring offers an open-world experience with vast landscapes, hidden dungeons, and challenging bosses.
+            </p>
+        </div>
+
+        <div class="modal" id="modal-gameplay">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Gameplay - More Information</h3>
+                <p>
+                    Elden Ring offers an open-world experience like no other. The combat system, which builds on the renowned Soulsborne mechanics, provides fluid and strategic combat, allowing players to use a wide range of weapons, magic, and skills. As you explore, you will encounter towering bosses, hidden dungeons, and intricate traps. The game encourages creative problem-solving, offering various paths and methods to overcome enemies. Whether you prefer a stealthy approach or engaging enemies head-on, Elden Ring gives players the freedom to shape their journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="column" id="multiplayer">
+            <h3>Multiplayer</h3>
+            <p>
+                In Elden Ring, you can summon other players for help or invade others for PvP combat. Form alliances, or engage in competitive duels with a robust multiplayer system.
+            </p>
+        </div>
+
+        <div class="modal" id="modal-multiplayer">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Multiplayer - More Information</h3>
+                <p>
+                    Elden Ring's multiplayer system is deeply integrated into the game. Players can summon allies to help them defeat challenging bosses or participate in cooperative exploration of the vast world. On the other hand, PvP (Player vs. Player) allows you to invade other players' worlds, testing your skills against theirs. From co-op to competitive duels, the multiplayer aspect adds depth and excitement to the game, making every interaction unpredictable. The balance between alliances and rivalries creates a dynamic online experience, extending the game’s replayability.
+                </p>
+            </div>
+        </div>
+
+        <div class="column" id="exploration">
+            <h3>Exploration</h3>
+            <p>
+                Explore vast landscapes, uncover hidden secrets, and face challenging enemies in a fully open-world environment. Each region is distinct and filled with lore and danger.
+            </p>
+        </div>
+
+        <div class="modal" id="modal-exploration">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Exploration - More Information</h3>
+                <p>
+                    The Lands Between is a vast, interconnected world filled with danger and beauty. The game encourages exploration, with towering castles, dense forests, and treacherous swamps hiding ancient secrets. Dungeons and caves can be found across the landscape, each offering valuable rewards for those brave enough to venture inside. Hidden pathways and lore-rich locations invite players to uncover the story behind the game’s sprawling world. Whether on foot or horseback, exploration feels rewarding, with each area designed to push players deeper into the narrative and gameplay.
+                </p>
+            </div>
+        </div>
+
+        <div class="column" id="character-development">
+            <h3>Character Development</h3>
+            <p>
+                Build and customize your character, unlocking new abilities and equipment to suit your playstyle. Develop your skills through leveling and exploration to become a powerful force in the Lands Between.
+            </p>
+        </div>
+
+        <div class="modal" id="modal-character-development">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Character Development - More Information</h3>
+                <p>
+                    Elden Ring's character development system is vast and flexible, allowing you to create a character that suits your preferred playstyle. Choose from different classes, each with unique starting stats and abilities, but as you progress, you can shape your character however you like. Level up by acquiring runes and defeating enemies, while unlocking new skills, magic, and gear. This system encourages experimentation, as you can tailor your character to fit your approach—whether it's using powerful sorceries, wielding colossal weapons, or becoming a master of stealth and agility.
+                </p>
+            </div>
+        </div>
+
+        <div class="column" id="boss-battles">
+            <h3>Boss Battles</h3>
+            <p>
+                Encounter massive bosses with unique abilities. Each boss presents a distinct challenge that will require careful planning, skill, and the right equipment to defeat.
+            </p>
+        </div>
+
+        <div class="modal" id="modal-boss-battles">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Boss Battles - More Information</h3>
+                <p>
+                    Elden Ring is known for its challenging boss battles, which are a hallmark of FromSoftware games. Each boss encounter is unique, demanding players to learn their patterns, weaknesses, and strengths. The bosses are beautifully designed, often towering over the player and presenting a sense of dread and exhilaration. Whether you're battling a massive dragon or a powerful demigod, every fight is a test of skill and perseverance. These encounters are the pinnacle of Elden Ring’s gameplay, providing unforgettable experiences and a true sense of accomplishment when defeated.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <div class="divider"></div>
+
+
+    <section id="section3" class="full-width background-section background-section3">
+        <h2 class="section-heading">Official Videos</h2>
+        <div class="video-container">
+            <div class="video-column">
+                <iframe width="600" height="350"
+                    src="https://www.youtube.com/embed/pDUZNP52obY?start=1" 
+                    title="Elden Ring Gameplay Overview Trailer" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+             </iframe>
+                <p class="video-caption">Elden Ring Gameplay Overview Trailer</p>
+            </div>
+            <div class = "video-column"> 
+                <iframe width="600" height="350" 
+                src="https://www.youtube.com/embed/Lls6Gdua_XY" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+                <p class="video-caption">ELDEN RING - E3 ANNOUNCEMENT TRAILER</p>
+            </div>
+        </div>
+        <div class="video-container">
+            <div class="video-column">
+                <iframe width="600" height="350" 
+                    src="https://www.youtube.com/embed/J9Bm5U-MJZw?start=1" 
+                    title="ELDEN RING Shadow of the Erdtree"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+                <p class="video-caption">ELDEN RING Shadow of the Erdtree</p>
+            </div>
+            <div class = "video-column"> 
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/JugxpebuS_E" 
+                title="ELDEN RING Shadow of the Erdtree" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+                <p class="video-caption">ELDEN RING Shadow of the Erdtree</p>
+            </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+
+    <section id="section4" class="full-width background-section background-section4">
+        <h2 class="section-heading">Players' Cuts</h2>
+        <div class="video-tag-container">
+            <video controls>
+                <source src="assets/1.mp4" type="video/mp4">
+            </video>
+
+            <video controls>
+                <source src="assets/2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </section>
+
+    <footer>    
+        <span>&copy; 2024 Zhuoang Tao</span>
+        <i class="fas fa-laptop-code"></i>
+        <i class="fas fa-camera"></i>
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://facebook.com/yourprofile" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
