@@ -23,6 +23,23 @@ Welcome to the Elden Ring Intro Website, a fan-made project designed to showcase
 - **JavaScript (ES6)**: Smooth scrolling, dynamic resizing, carousel functionality, and modal interactions.
 - **GitLab Pages**: Hosting and deployment for the website.
 
+### Installation
+
+1. **Clone the repository**:
+
+   ```
+   git clone https://github.com/Zhuoang2/Restful_API_Demo.git
+   cd Restful_API_Demo
+
+2. **Install dependencies**:
+
+   ```
+   npm install
+
+3. **Enjoy the website**
+   ```
+   npm start
+
 ## Available Scripts
 
 In the project directory, you can run:
