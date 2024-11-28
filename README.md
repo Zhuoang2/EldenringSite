@@ -16,6 +16,13 @@ Welcome to the Elden Ring Intro Website, a fan-made project designed to showcase
 - **HTML5 Video Integration**: Embedded trailers and gameplay videos.
 - **Social Media Integration**: Direct links to official Elden Ring pages and fan communities.
 
+## Technologies Used
+
+- **HTML5**: Semantic markup for clean and organized structure.
+- **CSS3 (SCSS)**: Advanced styles, animations, and responsive design using SCSS for modular and maintainable code.
+- **JavaScript (ES6)**: Smooth scrolling, dynamic resizing, carousel functionality, and modal interactions.
+- **GitLab Pages**: Hosting and deployment for the website.
+
 ## License
 
 This project is licensed under the **MIT License**. Feel free to use, modify, and distribute this project.
