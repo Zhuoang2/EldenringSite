@@ -2,8 +2,6 @@
 
 Welcome to [the Elden Ring Intro Website](https://mp1-973a54.gitlab.io), a fan-made project designed to showcase the breathtaking world, lore, and features of the popular action RPG, Elden Ring. This single-page application includes responsive design, interactive elements, and visually appealing animations to immerse visitors in the Elden Ring universe.
 
-![alt text](website.jpg)
-
 ## Features
 
 - **Responsive Design**: Optimized for multiple screen resolutions (1920x1080, 1366x768, 1280x720, and 1024x768).
