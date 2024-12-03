@@ -1,6 +1,6 @@
 # Elden Ring Introduction Website
 
-Welcome to [the Elden Ring Intro Website](#https://mp1-973a54.gitlab.io), a fan-made project designed to showcase the breathtaking world, lore, and features of the popular action RPG, Elden Ring. This single-page application includes responsive design, interactive elements, and visually appealing animations to immerse visitors in the Elden Ring universe.
+Welcome to [the Elden Ring Intro Website](https://mp1-973a54.gitlab.io), a fan-made project designed to showcase the breathtaking world, lore, and features of the popular action RPG, Elden Ring. This single-page application includes responsive design, interactive elements, and visually appealing animations to immerse visitors in the Elden Ring universe.
 
 ![alt text](website.jpg)
 
